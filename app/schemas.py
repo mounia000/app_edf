@@ -54,3 +54,12 @@ class ActionOut(BaseModel):
 
     class Config:
         orm_mode = True
+
+# ------------------ Auth ------------------
+class LoginRequest(BaseModel):
+    email: str
+    mot_de_passe: str
+
+class TokenResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
