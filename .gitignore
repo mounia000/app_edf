@@ -1,0 +1,10 @@
+# Ignorer l'environnement virtuel
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.egg-info/
+*.log
+.env
